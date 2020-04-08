@@ -1,1 +1,1 @@
-This is my SQL_project.
+This is my SQL coding. More codes will be shared.
