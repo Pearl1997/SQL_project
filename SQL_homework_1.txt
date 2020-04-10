@@ -1,0 +1,41 @@
+6.(1)
+SELECT OrderID, count(ProductID) as Count_Product
+FROM [OrderDetails]
+Group by OrderID
+Order by OrderID, count(ProductID) desc;
+
+(2)
+SELECT OrderID, count(ProductID) as Count_Product
+FROM [OrderDetails]
+Group by OrderID
+having count(ProductID) >=5
+Order by count(ProductID) desc;
+
+7.(1)
+SELECT * 
+FROM [Products]
+Where Unit like "%jars%"
+
+(2)
+SELECT * 
+FROM [Products]
+Where Unit like "%jars%"
+Order by Price desc;
+
+8.(1)
+SELECT * 
+FROM [OrderDetails]
+where OrderID = 10250
+
+
+Jack's New England Clam Chowder(41)
+Manjimup Dried Apples(51)
+Louisiana Fiery Hot Pepper Sauce (65)
+
+9.
+SELECT * 
+FROM [Products]
+where CategoryID = 4;
+
+
+
