@@ -1,11 +1,11 @@
 6.(1)
-SELECT OrderID, count(ProductID) as Count_Product
+SELECT OrderID, count(distinct ProductID) as Count_Product
 FROM [OrderDetails]
 Group by OrderID
-Order by OrderID, count(ProductID) desc;
+Order by 1 desc，2;
 
 (2)
-SELECT OrderID, count(ProductID) as Count_Product
+SELECT OrderID, count(distinct ProductID) as Count_Product
 FROM [OrderDetails]
 Group by OrderID
 having count(ProductID) >=5
